@@ -1,117 +1,205 @@
-# Safar360 🌍✈️
+<div align="center">
 
-**Safar360** is a premium, AI-powered travel discovery and planning platform designed for the modern explorer. Built for **VOYAGEHACK 3.0**, this application redefines how people discover, plan, and experience travel by blending immersive technology with intelligent planning tools.
+<h1>Safar360</h1>
 
----
+<p>AI-powered travel discovery and planning platform for India's heritage, hidden gems, and beyond.</p>
 
-## 🚀 Key Features
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat-square&logo=clerk&logoColor=white)](https://clerk.com/)
+[![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)](LICENSE)
 
--   **🌐 360° Immersive Viewer**: Step into breathtaking landmarks with high-fidelity panoramic tours of global wonders like the Eiffel Tower, Taj Mahal, and more.
--   **🌍 VR Views & 3D Exploration**: Fully immersive VR-compatible views and 3D terrain modeling for a realistic "try-before-you-fly" experience.
--   **🗺️ Smart Itinerary Planner**: Generate personalized travel plans in seconds. Our intelligent engine optimizes your route based on your interests and travel style.
--   **✨ Hidden Gems Discovery**: Uncover secret local spots that aren't on typical tourist maps, complete with stories and community-shared media.
--   **📁 Document Vault (Secure)**: A secure, integrated wallet for your travel essentials—store tickets, IDs, and PDFs with a dedicated backend on **Render**.
--   **✈️ Live Flight Tracker**: Real-time oceanic/aerial tracking of flights globally with a cinematic interface.
--   **🎒 Trip Checklist**: Never forget an essential again with our smart packing and pre-trip preparation tools.
--   **🤖 SafarX Agent**: Your premium AI travel co-pilot featuring:
-    -   **AI Chat**: Google Gemini-powered natural language queries.
-    -   **Flight Booking**: Real-time search and booking via **TBO API**.
-    -   **Hotel Discovery**: Live listings and details via **Rapid API x TripAdvisor**.
-    -   **Smart Web Search**: Tavily-integrated discovery for alternative stays & trains.
-    -   **Itinerary Gen**: Automated, personalized day-by-day travel planning.
--   **🗺️ Interactive Maps**: Visual exploration of destinations with real-time OSRM routing and distance calculation.
--   **🎵 Global Music Experience**: Ambient sounds and music tailored to your travel exploration.
--   **🤝 Social Groups**: Join or create travel communities to plan group trips and share experiences.
+**[Live Demo](https://safar360.vercel.app)** &nbsp;·&nbsp; [Report Bug](https://github.com/Rahul04-alt/Safar360/issues) &nbsp;·&nbsp; [Request Feature](https://github.com/Rahul04-alt/Safar360/issues)
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## About
 
-### Frontend
--   **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
--   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
--   **Animations**: [Framer Motion](https://www.framer.com/motion/), [GSAP](https://greensock.com/gsap/)
--   **Maps & 3D**: [Leaflet](https://leafletjs.com/), [React Three Fiber](https://r3f.docs.pmnd.rs/), [Mapillary-js](https://www.mapillary.com/)
--   **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
--   **Data Fetching**: [React Query](https://tanstack.com/query/v3/)
--   **Authentication**: [Clerk](https://clerk.com/)
-
-### Backend & Services
--   **Runtime**: [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/) (Deployed on **Render**)
--   **Database**: [Supabase](https://supabase.com/) & [MongoDB](https://www.mongodb.com/)
--   **AI Engines**: [Google Gemini Pro](https://deepmind.google/technologies/gemini/), [FastAPI](https://fastapi.tiangolo.com/), & [Hugging Face](https://huggingface.co/)
--   **APIs**: TBO (Flights), TripAdvisor (Hotels), Tavily (Discovery), [Cloudinary](https://cloudinary.com/) (Media)
+Safar360 is a full-stack travel companion app built with React and Vite. It combines AI-generated itineraries, immersive 360° VR tours, real-time interactive maps, and a social travel community — with a focus on India's lesser-known destinations alongside global exploration.
 
 ---
 
-## 🏗️ Installation & Setup
+## Features
+
+**AI & Planning**
+- **AI Itinerary Planner** — Google Gemini-powered day-by-day trip plans with seasonal, budget, and state-aware context
+- **SafarX AI Agent** — Conversational AI agent for flight search, hotel discovery, web search via Tavily, and automated trip planning
+- **Trip Confidence Meter** — Pre-trip checklist with an animated readiness score based on completion
+
+**Exploration & Discovery**
+- **Interactive 3D Globe** — WebGL Earth rendered with React Three Fiber and a procedural star field
+- **360° VR Tours** — Panoramic viewer with WebXR support across 50+ global destinations
+- **Hidden Gems** — Curated off-beat Indian destinations with filters by state, type, and best season
+- **Google Earth Explorer** — Embedded satellite and street-level exploration within the app
+- **Interactive Maps** — Leaflet-based destination explorer with OSRM routing and live distance calculation
+
+**Bookings & Tracking**
+- **Flight Search & Booking** — Real-time flight search and booking via TBO API through SafarX Agent
+- **Hotel Discovery & Booking** — Live hotel listings, details, and booking via TripAdvisor / RapidAPI
+- **Live Flight Tracker** — Real-time flight status and global route visualization via AviationStack
+
+**Community & Social**
+- **Social Travel Groups** — Create or join travel communities, coordinate meetups, find compatible travel partners
+- **Travel Matchmaker** — Match with other users based on destination preferences and travel style
+- **Group Events & Discussions** — In-group event planning, photo sharing, and discussion threads
+
+**Utilities**
+- **Document Vault** — Secure storage for travel documents (passport, visa, tickets) backed by Supabase Storage
+- **Media Upload** — Community photo contributions with Cloudinary-backed storage
+- **Ambient Music Player** — Background music and ambient sounds for the exploration experience
+- **PWA Support** — Installable app with offline caching via service worker
+
+---
+
+## Tech Stack
+
+**Frontend**
+- React 18 + Vite 5
+- Tailwind CSS + Framer Motion
+- React Three Fiber + @react-three/drei (3D globe)
+- Leaflet + React Leaflet (maps)
+- React Query + Axios (data fetching)
+- Clerk (authentication)
+
+**Backend & Services**
+- Node.js + Express — document vault API (hosted on Render)
+- Supabase — PostgreSQL database + file storage
+- MongoDB Atlas — document metadata
+- Google Gemini Pro — AI itinerary and chat generation
+- A-Frame + WebXR — 360° VR rendering
+- Cloudinary — media storage and delivery
+
+**External APIs**
+- TBO API — flight search and booking
+- TripAdvisor via RapidAPI — hotel listings and details
+- Tavily — AI-assisted travel web search
+- AviationStack — live flight tracking
+- OpenWeather — weather-based trip confidence scoring
+- OSRM — open-source route distance calculation
+- Flickr — destination photo discovery
+- Google Maps — destination coordinates and place search
+- Hugging Face Spaces — SafarX AI agent backend
+
+---
+
+## Project Structure
+
+```
+Safar360/
+├── public/               # Static assets, PWA manifest, service worker
+├── server/               # Express backend for Document Vault
+│   ├── middleware/       # JWT auth middleware
+│   ├── models/           # Mongoose Document schema
+│   └── routes/           # /api/documents CRUD routes
+└── src/
+    ├── assets/           # Destination images (AVIF/WebP/JPEG)
+    ├── components/
+    │   ├── 3d/           # Globe and 3D scene (React Three Fiber)
+    │   ├── animations/   # Aurora, ChromaGrid, ElectricBorder, MagicBento
+    │   ├── SocialGroups/ # Groups, meetups, matchmaking UI
+    │   └── VirtualTour/  # VR scene and panorama viewer
+    ├── contexts/         # AppContext — global state
+    ├── data/             # Static JSON (destinations, hidden gems, VR tours)
+    ├── hooks/            # useApi, useAuth, useSearch, social hooks
+    ├── lib/              # Supabase client
+    ├── pages/
+    │   └── AgentPage/    # SafarX AI agent (flights + hotels)
+    ├── services/         # Gemini, API clients, recommendation engine
+    └── utils/            # Constants, helpers, itinerary calculator
+```
+
+---
+
+## Getting Started
 
 ### Prerequisites
--   Node.js (v20 or higher)
--   npm or yarn
--   MongoDB Atlas account
--   Supabase project
--   Clerk application
--   Cloudinary account
--   Google Gemini API Key
 
-### Frontend Setup
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/lucky15426/Safar360.git
-    cd Safar360
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-### Environment Configuration
+- Node.js v20+
+- Accounts: Supabase, Clerk, Cloudinary, MongoDB Atlas
+- API keys: Google Gemini, AviationStack, OpenWeather, Flickr, Google Maps, RapidAPI, TBO, Tavily
 
-#### Frontend (.env)
-Create a `.env` in the root directory:
+### Installation
+
+```bash
+git clone https://github.com/Rahul04-alt/Safar360.git
+cd Safar360
+npm install
+cd server && npm install && cd ..
+```
+
+### Environment Variables
+
+Create **`.env.local`** in the project root:
+
 ```env
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_pub_key
-VITE_GEMINI_API_KEY=your_gemini_key
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+VITE_GEMINI_API_KEY=your_google_gemini_api_key
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 VITE_API_BASE_URL=http://localhost:5000
 VITE_AI_API_URL=http://localhost:8000
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_CLOUD_NAME=your_cloudinary_name
-VITE_CLOUD_API_KEY=your_cloudinary_key
-VITE_CLOUD_API_SECRET=your_cloudinary_secret
-VITE_OPENWEATHER_API_KEY=your_openweather_key
-VITE_AVIATION_STACK_API_KEY=your_aviation_stack_key
+VITE_API_URL=https://bharatverse11-safarx.hf.space
+VITE_CLOUD_NAME=your_cloudinary_cloud_name
+VITE_CLOUD_API_KEY=your_cloudinary_api_key
+VITE_GOOGLE_MAPS_KEY=your_google_maps_api_key
+VITE_AVIATION_STACK_API_KEY=your_aviationstack_api_key
+VITE_OPENWEATHER_API_KEY=your_openweather_api_key
+VITE_FLICKR_API_KEY=your_flickr_api_key
 ```
 
-#### Document Vault Backend (server/.env)
-Create a `.env` in the `/server` directory:
+Create **`server/.env`**:
+
 ```env
 PORT=5000
-MONGODB_URI=your_mongodb_uri
+MONGODB_URI=your_mongodb_connection_string
 CLERK_SECRET_KEY=your_clerk_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ```
-4.  Start the backend server:
-    ```bash
-    npm run dev
-    ```
+
+### Running Locally
+
+```bash
+# Frontend — http://localhost:3000
+npm run dev
+
+# Backend (separate terminal)
+cd server && node server.js
+```
+
+| Script | Description |
+|---|---|
+| `npm run dev` | Start Vite dev server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
 
 ---
 
-## 🚢 Deployment & Status
+## Deployment
 
--   **Frontend**: Deployed on **Vercel**.
--   **Backend (Document Vault)**: Hosted on **Render**.
--   **AI Agent Engine**: Hosted on **Hugging Face Spaces**.
--   **GitHub**: [lucky15426/Safar360](https://github.com/lucky15426/Safar360)
+| | Platform |
+|---|---|
+| Frontend | [Vercel](https://vercel.com/) |
+| Backend | [Render](https://render.com/) |
+| AI Agent | [Hugging Face Spaces](https://huggingface.co/spaces) |
+| Database | [Supabase](https://supabase.com/) + [MongoDB Atlas](https://www.mongodb.com/atlas) |
 
 ---
 
-## 🏆 VOYAGEHACK 3.0 Submission
+## License
 
-Developed with passion for **VOYAGEHACK 3.0**, Safar360 aims to bridge the gap between imagination and reality for travelers worldwide.
+MIT
 
+---
 
+<div align="center">
+<sub>Built for <strong>VOYAGEHACK 3.0</strong></sub>
+</div>
 
