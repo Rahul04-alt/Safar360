@@ -2,7 +2,7 @@
 
 <h1>Safar360</h1>
 
-<p>AI-powered travel discovery and planning platform for India's heritage, hidden gems, and beyond.</p>
+<p>Safar360 is an AI-powered travel companion built for explorers who want more than the usual tourist trail.<br/>It blends intelligent trip planning, immersive 360° experiences, and real-time tools into one platform — making it easier to discover, plan, and experience travel across India and the world.</p>
 
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -19,7 +19,7 @@
 
 ## About
 
-Safar360 is a full-stack travel companion app built with React and Vite. It combines AI-generated itineraries, immersive 360° VR tours, real-time interactive maps, and a social travel community — with a focus on India's lesser-known destinations alongside global exploration.
+Safar360 redefines how people discover and experience travel by combining AI-generated itineraries, immersive 360° VR tours, real-time interactive maps, and a social travel community into a single platform. It surfaces India's lesser-known destinations alongside global travel planning — helping users go beyond the obvious and explore with confidence.
 
 ---
 
